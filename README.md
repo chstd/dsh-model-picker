@@ -7,6 +7,8 @@
 The stock DeepSeek Harness composer opens a separate two-level model menu. This plugin puts provider,
 model and reasoning effort in one panel, and searches model names across all providers.
 
+To install, hand this link to your DSH agent: `https://github.com/chstd/dsh-model-picker`.
+
 ![The model picker with providers, models and the effort slider](docs/media/menu.jpg)
 
 ## Why this exists
@@ -25,17 +27,17 @@ model and reasoning effort in one panel, and searches model names across all pro
 
 ## Install
 
-Send this line to your DSH chat:
+The simplest way is to let your DSH agent do it. Send this line to the chat:
 
 ```
 Install this DSH plugin: https://github.com/chstd/dsh-model-picker
 ```
 
-The agent clones the repository, installs the bundle and tells you when to refresh the page. There is
-nothing to configure by hand and no host restart is needed. Your agent needs network access to GitHub.
+The agent clones the repository, installs the bundle and tells you when to refresh the page. Nothing to
+configure by hand, and no host restart is needed. The agent just needs network access to GitHub.
 
-If you install it yourself, the same thing happens in two steps: clone the repository somewhere on the
-machine that runs DSH, then install that folder as a bundle with
+Installing by hand works too and takes a few more steps: clone the repository on the machine that runs
+DSH, then install that folder as a bundle with
 `plugin_manager action=install_bundle target=<the cloned folder>`.
 
 ## Use
