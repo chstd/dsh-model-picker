@@ -25,13 +25,18 @@ model and reasoning effort in one panel, and searches model names across all pro
 
 ## Install
 
-Clone or download this folder, then install it as a DSH bundle:
+Send this line to your DSH chat:
 
 ```
-plugin_manager action=install_bundle target=<absolute path to this folder>
+Install this DSH plugin: https://github.com/chstd/dsh-model-picker
 ```
 
-The folder must be reachable on the machine running DSH. Refresh the web page after installation.
+The agent clones the repository, installs the bundle and tells you when to refresh the page. There is
+nothing to configure by hand and no host restart is needed. Your agent needs network access to GitHub.
+
+If you install it yourself, the same thing happens in two steps: clone the repository somewhere on the
+machine that runs DSH, then install that folder as a bundle with
+`plugin_manager action=install_bundle target=<the cloned folder>`.
 
 ## Use
 
