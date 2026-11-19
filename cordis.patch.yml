@@ -1,0 +1,6 @@
+# dsh-model-picker bundle patch: one client-only plugin row.
+# The browser half is discovered through package.json dsh.client; the host half
+# is an empty apply so the row exists in the host Loader.
+- insert:
+    - id: dsh-model-picker
+      name: '@local/dsh-model-picker'
