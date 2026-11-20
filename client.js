@@ -743,6 +743,8 @@ window.__ModuleLoader__.load({
   height: 6px;
   border-radius: 50%;
   background: var(--dsw-alias-label-dimmed, rgba(128,128,128,.6));
+  /* Clamp keeps the enlarged 6px stop inside the 8px rail at both ends. */
+  left: clamp(3px, var(--dmp-stop-left, 0%), calc(100% - 3px));
   transform: translate(-50%, -50%);
   pointer-events: none;
 }
@@ -1504,7 +1506,7 @@ window.__ModuleLoader__.load({
           stops.push(h('span', {
             key: 'stop:' + index,
             className: 'dmp-stop',
-            style: { left: stopPercent + '%' },
+            style: { '--dmp-stop-left': stopPercent + '%' },
           }));
         }
         effortBlock = h('div', { className: 'dmp-effort' },
