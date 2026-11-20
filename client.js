@@ -701,7 +701,7 @@ window.__ModuleLoader__.load({
 }
 .dmp-rail {
   position: relative;
-  height: 8px;
+  height: 10px;
   border-radius: 999px;
   background: var(--dsw-alias-border-l2, rgba(128,128,128,.35));
   cursor: pointer;
@@ -743,8 +743,8 @@ window.__ModuleLoader__.load({
   height: 6px;
   border-radius: 50%;
   background: var(--dsw-alias-label-dimmed, rgba(128,128,128,.6));
-  /* Clamp keeps the enlarged 6px stop inside the 8px rail at both ends. */
-  left: clamp(3px, var(--dmp-stop-left, 0%), calc(100% - 3px));
+  /* The 10px rail leaves a 2px gradient rim around the 6px stop at every side. */
+  left: clamp(5px, var(--dmp-stop-left, 0%), calc(100% - 5px));
   transform: translate(-50%, -50%);
   pointer-events: none;
 }
