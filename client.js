@@ -435,7 +435,7 @@ window.__ModuleLoader__.load({
   padding: 4px;
   overflow: hidden;
   color: var(--dsw-alias-label-primary, #e6e8ec);
-  background: var(--dsw-specific-menu, var(--dsw-alias-bg-layer-2, #2c2c2e));
+  background: var(--dsw-alias-bg-layer-1, #232325);
   border: 1px solid var(--dsw-alias-border-inverted, rgba(255,255,255,.06));
   border-radius: 12px;
   box-shadow:
@@ -475,7 +475,7 @@ window.__ModuleLoader__.load({
 .dmp-providers {
   display: flex;
   flex-direction: column;
-  gap: 1px;
+  gap: 0;
   flex: 1;
   min-height: 0;
   overflow-y: auto;
@@ -486,7 +486,7 @@ window.__ModuleLoader__.load({
   gap: 6px;
   width: 100%;
   box-sizing: border-box;
-  min-height: 40px;
+  min-height: 32px;
   margin: 0;
   padding: 4px 10px;
   border: 0;
@@ -562,7 +562,7 @@ window.__ModuleLoader__.load({
 .dmp-models {
   display: flex;
   flex-direction: column;
-  gap: 1px;
+  gap: 0;
   flex: 1;
   min-height: 0;
   padding: 2px 0;
@@ -607,7 +607,7 @@ window.__ModuleLoader__.load({
   gap: 6px;
   width: 100%;
   box-sizing: border-box;
-  min-height: 40px;
+  min-height: 32px;
   margin: 0;
   padding: 4px 10px;
   border: 0;
