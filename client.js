@@ -739,8 +739,8 @@ window.__ModuleLoader__.load({
 .dmp-stop {
   position: absolute;
   top: 50%;
-  width: 3px;
-  height: 3px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   background: var(--dsw-alias-label-dimmed, rgba(128,128,128,.6));
   transform: translate(-50%, -50%);
