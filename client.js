@@ -379,24 +379,24 @@ window.__ModuleLoader__.load({
   gap: 4px;
   min-width: 0;
   max-width: 360px;
-  height: 28px;
+  height: 34px;
   margin: 0;
-  padding: 0 4px 0 8px;
-  border: 0;
-  border-radius: var(--dsw-radius-sm, 6px);
-  background: transparent;
+  padding: 0 12px;
+  border: 1px solid var(--dsw-alias-border-l2, rgba(128,128,128,.35));
+  border-radius: 18px;
+  background: var(--dsw-specific-selector, var(--dsw-alias-bg-layer-2, rgba(128,128,128,.14)));
   color: var(--dsw-alias-label-secondary, #8b8f98);
   font: inherit;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 22px;
   cursor: pointer;
   outline: none;
 }
 @media (hover: hover) {
-  .dmp-trigger:hover:not(:disabled) { background: var(--dsw-alias-interactive-bg-hover, rgba(128,128,128,.12)); }
+  .dmp-trigger:hover:not(:disabled) { background: var(--dsw-alias-interactive-bg-hover-accent, rgba(128,128,128,.18)); }
 }
-.dmp-trigger:focus-visible { box-shadow: 0 0 0 2px var(--dsw-focus-ring-color, var(--dsw-alias-state-business-primary, #4176e6)); }
+.dmp-trigger:focus-visible { box-shadow: inset 0 0 0 2px var(--dsw-alias-brand-primary, #4176e6); }
 .dmp-trigger.dmp-quiet:focus-visible { box-shadow: none; }
 .dmp-trigger:disabled { color: var(--dsw-alias-label-dimmed, rgba(128,128,128,.7)); cursor: default; }
 .dmp-trigger-label {
@@ -435,10 +435,13 @@ window.__ModuleLoader__.load({
   padding: 4px;
   overflow: hidden;
   color: var(--dsw-alias-label-primary, #e6e8ec);
-  background: var(--dsw-alias-bg-layer-1, #232325);
-  border: 1px solid var(--dsw-alias-border-l2, rgba(128,128,128,.28));
-  border-radius: var(--dsw-radius-md, 10px);
-  box-shadow: var(--dsw-elevation-prominent, 0 12px 32px rgba(0,0,0,.32));
+  background: var(--dsw-specific-menu, var(--dsw-alias-bg-layer-2, #2c2c2e));
+  border: 1px solid var(--dsw-alias-border-inverted, rgba(255,255,255,.06));
+  border-radius: 12px;
+  box-shadow:
+    0 0 1px 0 rgba(0,0,0,.2),
+    0 0 4px 0 rgba(0,0,0,.02),
+    0 12px 32px 0 rgba(0,0,0,.08);
 }
 .dmp-searchbar {
   display: flex;
@@ -483,16 +486,16 @@ window.__ModuleLoader__.load({
   gap: 6px;
   width: 100%;
   box-sizing: border-box;
-  min-height: 32px;
+  min-height: 40px;
   margin: 0;
-  padding: 4px 6px;
+  padding: 4px 10px;
   border: 0;
-  border-radius: 6px;
+  border-radius: 10px;
   background: transparent;
   color: inherit;
   font: inherit;
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 22px;
   text-align: left;
   cursor: pointer;
   outline: none;
@@ -529,9 +532,9 @@ window.__ModuleLoader__.load({
 .dmp-right-head { display: flex; flex-direction: column; flex: none; gap: 2px; padding: 0 2px 4px; }
 .dmp-right-caption {
   padding: 2px 5px 0;
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 600;
-  line-height: 18px;
+  line-height: 22px;
   color: var(--dsw-alias-label-primary, inherit);
   overflow: hidden;
   text-overflow: ellipsis;
@@ -541,14 +544,14 @@ window.__ModuleLoader__.load({
   box-sizing: border-box;
   width: 100%;
   margin: 0;
-  padding: 5px 7px;
+  padding: 6px 10px;
   border: 0;
-  border-radius: var(--dsw-radius-md, 10px);
+  border-radius: 10px;
   background: transparent;
   color: inherit;
   font: inherit;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 22px;
   outline: none;
 }
 @media (pointer: coarse) {
@@ -604,16 +607,16 @@ window.__ModuleLoader__.load({
   gap: 6px;
   width: 100%;
   box-sizing: border-box;
-  min-height: 32px;
+  min-height: 40px;
   margin: 0;
-  padding: 4px 7px;
+  padding: 4px 10px;
   border: 0;
-  border-radius: 6px;
+  border-radius: 10px;
   background: transparent;
   color: inherit;
   font: inherit;
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 22px;
   text-align: left;
   cursor: pointer;
   outline: none;
@@ -684,8 +687,8 @@ window.__ModuleLoader__.load({
   align-items: baseline;
   justify-content: space-between;
   gap: 8px;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 22px;
 }
 .dmp-effort-label { flex: none; color: var(--dsw-alias-label-tertiary, rgba(128,128,128,.9)); }
 .dmp-effort-value {
