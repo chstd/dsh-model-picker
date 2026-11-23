@@ -379,13 +379,13 @@ window.__ModuleLoader__.load({
   gap: 4px;
   min-width: 0;
   max-width: 360px;
-  box-sizing: border-box;
+  box-sizing: content-box;
   height: 28px;
   margin: 0;
   padding: 0 4px 0 8px;
-  border: 1px solid var(--dsw-alias-border-l2, rgba(128,128,128,.35));
-  border-radius: 18px;
-  background: var(--dsw-specific-selector, var(--dsw-alias-bg-layer-2, rgba(128,128,128,.14)));
+  border: 0;
+  border-radius: var(--dsw-radius-sm, 6px);
+  background: transparent;
   color: var(--dsw-alias-label-secondary, #8b8f98);
   font: inherit;
   font-size: 13px;
@@ -395,9 +395,9 @@ window.__ModuleLoader__.load({
   outline: none;
 }
 @media (hover: hover) {
-  .dmp-trigger:hover:not(:disabled) { background: var(--dsw-alias-interactive-bg-hover-accent, rgba(128,128,128,.18)); }
+  .dmp-trigger:hover:not(:disabled) { background: var(--dsw-alias-interactive-bg-hover, rgba(128,128,128,.12)); }
 }
-.dmp-trigger:focus-visible { box-shadow: inset 0 0 0 2px var(--dsw-alias-brand-primary, #4176e6); }
+.dmp-trigger:focus-visible { box-shadow: 0 0 0 2px var(--dsw-focus-ring-color, var(--dsw-alias-state-business-primary, #4176e6)); }
 .dmp-trigger.dmp-quiet:focus-visible { box-shadow: none; }
 .dmp-trigger:disabled { color: var(--dsw-alias-label-dimmed, rgba(128,128,128,.7)); cursor: default; }
 .dmp-trigger-label {
