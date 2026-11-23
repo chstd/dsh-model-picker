@@ -379,17 +379,18 @@ window.__ModuleLoader__.load({
   gap: 4px;
   min-width: 0;
   max-width: 360px;
-  height: 34px;
+  box-sizing: border-box;
+  height: 28px;
   margin: 0;
-  padding: 0 12px;
+  padding: 0 4px 0 8px;
   border: 1px solid var(--dsw-alias-border-l2, rgba(128,128,128,.35));
   border-radius: 18px;
   background: var(--dsw-specific-selector, var(--dsw-alias-bg-layer-2, rgba(128,128,128,.14)));
   color: var(--dsw-alias-label-secondary, #8b8f98);
   font: inherit;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 400;
-  line-height: 22px;
+  line-height: 20px;
   cursor: pointer;
   outline: none;
 }
